@@ -10,7 +10,7 @@ const cors = require("cors");
 //this middleware read json data convert to javascript oject and put it in req.body
 app.use(
   cors({
-    origin: "http://localhost:5174",
+    origin: process.env.FRONTEND_URL,
     credentials: true,
   })
 );
